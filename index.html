@@ -23,19 +23,157 @@
                 <img src="./SVG/logo.svg" alt="Logo Raizes e Aromas">
             </div>
 
-            <nav>
-                <a href="#sobre">Sobre Nós</a>
-                <a href="#protudos">Protudos</a>
-                <a href="#cursos">Cursos</a>
-                <a href="#quiz">Quiz: Descubra o seu perfume</a>
-            </nav>
-
-
         </header>
-        
+
+        <section class="menu-baixo">
+            <nav id="menu" class="menu">
+                <ul>
+                    <a href="#sobre">Sobre Nós</a>
+                    <a href="#protudos">Protudos</a>
+                    <a href="#cursos">Cursos</a>
+                    <ul>
+
+                        <button class="quiz">Quiz: Descubra o seu perfume</button>
+
+                        <div class="pesquisa">
+                            <img src="./SVG/magnifying-glass.svg" alt="icon-pesquisar">
+                            <input type="text" placeholder="“Perfumes Intensos”">
+
+                        </div>
+            </nav>
+        </section>
+
+        <div class="banner">
+            <img src="./img/baner.png" alt="banner">
+
+        </div>
+
+        <div class="cards-container">
+
+            <!-- ------ card 1 -------- -->
+            <div class="card">
+                <img src="./img/protudo01.jpg" alt="card 1">
+
+                <div class="card-info">
+                    <h3>Belle Éternelle</h3>
+                    <p class="preco">R$ 549,90</p>
+                </div>
+
+                <span class="estrela" onclick="toggleStar(this)">☆</span>
+            </div>
+
+            <!-- --------- card 2 ---------- -->
+            <div class="card">
+                <img src="./img/protudo02.jpg" alt="card 2">
+
+                <div class="card-info">
+                    <h3>Citrus Vivo</h3>
+                    <p class="preco">R$ 413,89</p>
+                </div>
+
+                <span class="estrela" onclick="toggleStar(this)">☆</span>
+            </div>
+
+            <!-- ------------ card 3 ---------- -->
+            <div class="card">
+                <img src="./img/protudo03.jpg" alt="card 3">
+
+                <div class="card-info">
+                    <h3>Jardim Serena</h3>
+                    <p class="preco">R$ 630,00</p>
+                </div>
+
+                <span class="estrela" onclick="toggleStar(this)">☆</span>
+            </div>
+
+        </div>
+
+        <section class="sobre">
+            <div class="texto">
+                <h2>Por Trás da Marca</h2>
+
+                <p>
+                    Perfumaria artesanal com fragrâncias naturais, veganas e éticas,
+                    que despertam emoções e bem-estar. Criada por Paula, aromaterapeuta
+                    apaixonada por alquimia e natureza, a marca também ensina a arte da
+                    perfumaria e traduz suas experiências sensoriais no ambiente digital
+                    com delicadeza, elegância e inspiração.
+                </p>
+            </div>
+
+            <div class="imagem">
+                <img src="./img/sobre.jpg" alt="Foto da marca">
+            </div>
+        </section>
+        <section class="quiz">
+
+            <div class="quiz-container">
+                <h2>Descubra Seu Perfume Ideal</h2>
+
+                <div class="card question-card" id="q1">
+                    <h3>1. Qual ambiente te traz mais paz?</h3>
+                    <button onclick="answer('natureza', 1)">Floresta / natureza</button>
+                    <button onclick="answer('cidade', 1)">Cidade moderna</button>
+                    <button onclick="answer('praia', 1)">Praia</button>
+                </div>
+
+                <div class="card question-card" id="q2">
+                    <h3>2. Você prefere fragrâncias...</h3>
+                    <button onclick="answer('doce', 2)">Doces</button>
+                    <button onclick="answer('amadeirado', 2)">Amadeiradas</button>
+                    <button onclick="answer('citricas', 2)">Cítricas</button>
+                </div>
+
+                <div class="card question-card" id="q3">
+                    <h3>3. Qual sensação você quer transmitir?</h3>
+                    <button onclick="answer('calma', 3)">Calma</button>
+                    <button onclick="answer('energia', 3)">Energia</button>
+                    <button onclick="answer('elegancia', 3)">Elegância</button>
+                </div>
+
+                <div class="card result-card" id="result">
+                    <h2>Seu perfume ideal é:</h2>
+                    <p id="resultText"></p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
     </main>
+
+    <footer>
+        <div class="roda-pe">
+
+            <div class="footer-logo">
+                <img src="./SVG/logo f.svg" alt="Logo" class="logo">
+            </div>
+
+            <div class="footer-contato">
+                <h3>Entre em contato com a gente pelo whatsapp:</h3>
+                <p>11 91628-31156 (gerencia de envios)</p>
+                <p>11 9658-4453 (dúvidas em geral)</p>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>Siga nós nas Redes Sociais</h3>
+                <div class="icons">
+                    <img src="./SVG/instagram.svg" alt="icon do insta">
+                    <img src="./SVG/tiktok.svg" alt="icon do ttk">
+                    <img src="./SVG/facebook.svg" alt="icon do face">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
 
 
 </body>
+
+
 
 </html>
