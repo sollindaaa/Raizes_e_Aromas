@@ -6,9 +6,9 @@ let sombra = document.getElementById("sombra")
 
 function abreFechaMenu() {
     //Menu fechado
-    if (window.getComputedStyle(menu).right == "-210px") {
+    if (window.getComputedStyle(menu).right == "-600px") {
         //Menu aberto
-        menu.style.right = "0"
+        menu.style.right = "80px"
 
         iconeX.style.fill = "#fff"
 
@@ -23,7 +23,7 @@ function abreFechaMenu() {
 
     else {
         //Fecha menu
-        menu.style.right = "-210px"
+        menu.style.right = "-600px"
 
         //Esconde icone X
         iconeX.style.display = "none"
@@ -40,7 +40,7 @@ function abreFechaMenu() {
 }
 
 onresize = () => {
-    if (window.getSelection(menu).right == "-210px") {
+    if (window.getSelection(menu).right == "-600px") {
         //Mostra icone X
         iconeX.style.display = "none"
     } else {
